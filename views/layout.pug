@@ -1,12 +1,22 @@
 doctype html
 html
   head
-    title= `${title}`
-    link(rel='stylesheet', href='/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/styles.css')
-
+    title= title
+    link(rel="stylesheet", href="/css/styles.css")
+    link(href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet")
   body
-    div.container.listing-reg
-      h1 My Amazing App
+    header
+      nav
+        ul
+          li
+            a(href='/') Home
+          li | 
+          li
+            a(href='#') Blog
+          li(style="float: right")
+            a(href='/registrations') Register
 
-      block content
+    block content
+
+    footer
+      | © Copyright 2021

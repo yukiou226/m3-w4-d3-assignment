@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Registration List
+
+  table.listing-table
+    thead
+      tr
+        th Name
+        th Email
+    tbody
+      each registrant in registrations
+        tr
+          td= registrant.name
+          td= registrant.email

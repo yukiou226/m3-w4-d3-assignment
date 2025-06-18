@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .form-wrapper
+    h2 Register to Subscribe
+
+    if errors
+      ul.my-errors
+        each error in errors
+          li #{error.msg}
+
+    form(action="/" method="POST" class="form-registration")
+      label(for="name") Name:
+      input(type="text", name="name", id="name", value=(data ? data.name : ''))
+
+      label(for="email") Email:
+      input(type="email", name="email", id="email", value=(data ? data.email : ''))
+
+      button(type="submit") Register

@@ -1,0 +1,35 @@
+.form-wrapper {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.form-registration {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.form-registration input {
+  margin: 0 0 10px;
+  padding: 10px;
+}
+.form-registration button {
+  background-color: #daaa0e;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.my-errors {
+  list-style: none;
+  color: red;
+  font-weight: bold;
+  padding: 0;
+}
+.my-errors li::before {
+  content: "! Error: ";
+  color: red;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=registration.css.map */

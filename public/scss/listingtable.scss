@@ -1,0 +1,19 @@
+.listing-table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th, td {
+      padding: 10px;
+      border: 1px solid #666;
+    }
+  
+    th {
+      background-color: black;
+      color: white;
+    }
+  
+    td:first-child, th:first-child {
+      border-right: 1px solid #666;
+    }
+  }
+  
