@@ -15,6 +15,11 @@ router.get('/', (req, res) => {
   res.render('index', { title: 'Simple Kitchen' });
 });
 
+router.get('/register', (req, res) => {
+  //res.send('It works!');
+  res.render('register', { title: 'Simple Kitchen Register Form' });
+});
+
 router.get('/registrations', basic.check((req, res) => {
   Registration.find()
     .then((registrations) => {
